@@ -1,0 +1,23 @@
+ /** Header Pages restaurant**/
+ .header--withBackArrow {
+    position: relative;
+}
+.header__arrow {
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 70%;
+    display: flex;
+    color: $color-txt;
+    @include center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+   
+}
+.header__logo {
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: center;
+
+}

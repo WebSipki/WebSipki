@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .logo {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        align-self: center;
+        width: 200px;
+        padding: 1.5rem 0 1rem 0;
+        grid-column-start: 2;
+        margin: auto;
+
+        img {
+          overflow: clip;
+        }
+    }
+    .header__location {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        display: flex;
+        @include center;
+        margin: auto;
+        width: 100%;
+        background-color: #eaeaea;
+        padding: 1rem 0;
+        box-shadow: inset 0px 20px 15px -20px #bdbcbc;
+        color: #353535;
+
+        .iconlocation {
+            font-size: 16px;
+            transform: translateY(-2px) translateX(-20px);
+            color: #353535;
+            text-shadow: 0px 0px 0px #626262;
+        }
+        .loca{
+            border: none;
+            background-color: #eaeaea;
+        }
+
+    }
+
+}

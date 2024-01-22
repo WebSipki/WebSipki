@@ -1,0 +1,28 @@
+/**EXPLORER**/
+.explorer {
+    display: flex;
+    flex-direction: column;
+    @include center;
+    text-align: center;
+    background: $cd-bkg;
+    padding: 45px 2em 57px 2em;
+    font-family: "Roboto", sans-serif;
+
+    .explorer_title {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px 5px;
+    }
+    .Roboto_bold {
+        font-family: "Roboto-Bold";
+            
+    }
+    .explorer_subtitle {
+        font-size: 20px;
+    }
+    .Roboto_light {
+        font-family: "Roboto-Light";
+    }
+        
+       
+}  

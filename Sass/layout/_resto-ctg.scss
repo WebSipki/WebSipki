@@ -1,0 +1,92 @@
+/**MENU CATEGORIES**/
+.menu_categories {
+    display: block;
+   
+    .menu_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        
+        .menu_title {
+            align-self: flex-start;
+            padding: 0px 17px;
+           
+        }
+        .menu_title_underline {
+            align-self: flex-start;
+            width: 50px;
+            height: 3px;
+            margin: 5px 0px 10px 20px;
+            background-color: $cd-Tertiaire;
+        }
+
+    }
+   
+    
+    .menu_card {
+        position: relative;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: $color-w;
+        border-radius: 20px;
+        box-shadow: 0 0 20px $cd-shadow;
+        margin: 15px 0px;
+        width: 95%;
+        height: 80px;
+        overflow: hidden;
+        cursor: pointer;
+       
+        .menu_card_titles {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            overflow: hidden; 
+            width: 95%;
+           
+            p, h4 {
+                display: block;
+               @include trois-points;
+                margin: 5px 20px;
+                font-size: 20px;
+            }
+        }
+        .menu_card_price {
+            
+            position: relative;
+            margin-right: 1rem;
+        
+        }   
+       
+        .menu_card_check {
+            position: relative;
+            right: 0rem;
+            display: flex;
+           @include center;
+            height: 80px;
+            background-color:$cd-Tertiaire ;
+            margin-right: -4rem;
+            width: 4rem;
+            transition: all 1s;
+        }
+        &:hover .menu_card_check{
+            margin-right: 0;
+            
+        }
+            .menu_card_check_icon {
+                color: $color-w;
+                font-size: 28px;
+                &:hover{
+                    border-radius: 0px ;
+                    animation: rotation; 
+                    animation-duration: 1s;
+                    color:$color-w;
+                    
+                }   
+            }
+         
+    }          
+   
+}

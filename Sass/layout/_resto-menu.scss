@@ -1,0 +1,51 @@
+/**MENU**/
+.menu {
+    background-color: $cd-bkg;
+    border-top-left-radius:  40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
+ 
+    .menu_header {
+        display: flex;       
+        @include center;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        
+       
+        .menu_header_title{
+            font-family: "Shrikhand";
+            font-size: 24px;
+            margin-right: 70px;
+            margin-left: 2px;
+        }
+
+        i{
+            margin-left:10em;
+            position: absolute;
+            font-size: 26px;
+            color: $color-txt;          
+        } 
+        
+        .icons-liked {
+            
+            opacity: 0; 
+            transition-property: all; 
+            transition-duration: 2s;   
+           
+           &:hover{
+            opacity: 1; 
+            color: transparent; 
+            @include linear-gradient;
+            //background-image: linear-gradient($cd-btn-Secondaire, $cd-btn-Primaire);
+            background-clip: text;
+            -webkit-background-clip: text;
+           } 
+
+        }
+
+    }
+} 

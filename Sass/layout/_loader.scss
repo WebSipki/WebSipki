@@ -1,0 +1,32 @@
+.anim-load {
+    
+    position: fixed;
+    background-color: $color-w;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disappear 3s linear;
+    animation-fill-mode: forwards; 
+
+
+    .loader {
+
+       
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid $cd-btn-Primaire;
+        border-bottom: 8px solid $cd-btn-Secondaire;
+        border-left: 8px solid $cd-Tertiaire;
+        border-right: 8px solid $cd-Tertiaire;
+        border-radius: 50% ;
+        width: 70px;
+        height: 70px;
+        margin: 80% 30%;
+        animation: spin 0.5s linear infinite;
+    }
+}
+
+
+        

@@ -1,0 +1,78 @@
+// mixins restaurants__card
+
+@mixin rest-card {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    -webkit-box-shadow: 0.25rem 0.25rem 10px #e4e4e4;
+    box-shadow: 0.25rem 0.25rem 10px #e4e4e4;
+    margin-top: 50px;
+    margin-bottom: 18px;
+    height: 300px;
+    text-decoration: none !important;
+}
+
+@mixin rest-image {
+    object-fit: cover;
+    border-radius:  20px 20px 0 0;
+    width:  100%;
+    height: 70%;
+}
+
+@mixin rest-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 10px;
+    color: #4d7052;
+    z-index: 0;
+    background-color: $cd-Tertiaire;
+   
+    &:hover{
+        animation-duration: 0.4s;
+        opacity:0.5;
+    }
+}
+// footer
+
+@mixin icon_footer{
+    color: $color-w;
+    margin-right:10px;
+    display: inline-block;
+  
+}
+@mixin center{
+    justify-content: center;
+    align-items: center;
+  
+}
+@mixin linear-gradient{
+    background: linear-gradient($cd-btn-Secondaire, $cd-btn-Primaire); 
+    box-shadow: 0.25rem 0.25rem 10px rgba(0,0,0,.25);
+}
+@mixin bordure{
+    border-radius: 40px;
+    border:none;
+}
+// p,h4
+@mixin trois-points{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin webkit-box-shadow{
+-webkit-box-shadow: 0.25rem 0.25rem 10px #e4e4e4;
+box-shadow: 0.25rem 0.25rem 10px #e4e4e4;
+background: #f6f6f6;
+}
+//fontionnement
+@mixin alignement-avec-préfixe{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }

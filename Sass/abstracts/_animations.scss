@@ -1,0 +1,105 @@
+ /*ANIMATION APPEAR CARD MENU */
+
+// Animation.restaurants__card 
+ .restaurants__card 
+ {
+   transition-property: transform;
+   transition-duration:400ms;
+      &:hover{
+         transform: scale(1.15);
+      }
+ }
+ // Animation New
+.new {
+   transition-duration: 400ms;
+   &:hover{
+      animation-duration: 0.4s;
+      opacity:0.5;
+   }
+}
+ 
+// Animation icons-liked
+.icons-liked {
+                        
+   opacity: 0; 
+   transition-property: all; 
+   transition-duration: 2s;   
+  
+  &:hover{
+   opacity: 1; 
+   color: transparent; 
+   background-image: linear-gradient($cd-btn-Secondaire, $cd-btn-Primaire);
+   background-clip: text;
+   -webkit-background-clip: text;
+  } 
+
+}
+
+  /*ANIMATION loader */
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg);}
+}
+
+@keyframes disappear {
+   0% { transform: scale(1);}
+   90% {transform: scale(1);}
+   100% { transform: scale(0); }
+}
+
+// Annimation card check
+@keyframes appear {
+    0% { transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes rotation{
+    0% { transform:rotate(0);
+       
+    }
+    100% {transform:rotate(-360deg);
+       
+    }
+  }
+
+// Annimation défilement card 
+.delay_0 {
+   animation-delay: 1s;
+   animation :appear 1s;
+}
+.delay_1 {
+   animation-delay: 2s;
+   animation :appear 2s;
+}
+.delay_2 {
+     animation-delay: 3s;
+     animation :appear 3s;
+}
+.delay_3 {
+   animation-delay: 4s;
+   animation :appear 4s;
+}
+.delay_4 {
+   animation-delay: 5s;
+   animation :appear 5s;
+}
+.delay_5 {
+   animation-delay: 6s;
+   animation :appear 6s;
+}
+.delay_6 {
+   animation-delay: 7s;
+   animation :appear 7s;
+}
+.delay_7 {
+   animation-delay: 8s;
+   animation :appear 8s;
+}
+.delay_8 {
+   animation-delay: 9s;
+   animation :appear 9s;
+}

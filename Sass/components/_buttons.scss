@@ -1,0 +1,48 @@
+/**Button Explorer**/
+button {
+    
+    padding: 20px 50px;
+    font-size: 17px;
+    margin-top: 20px;
+   @include linear-gradient;
+    position: relative;
+    overflow: hidden;
+    color:$color-w;
+    @include bordure;
+   
+    
+    &:hover {
+        opacity: 0.90;
+        transform: translate(0, -6px);
+        box-shadow: 0 0 15px 0 #353535;
+    }
+}
+/**FOOTER COMMEND**/
+.command {
+    @include center;
+    display: flex;
+    margin: 20px 0px 35px 0px;
+
+    .command_link {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .btn_main {
+        display: flex;
+        @include center;
+        margin-top: 20px;
+        font-size: 17px;
+        color: $color-w;
+        @include linear-gradient;
+        @include bordure;
+      
+
+        &:hover{
+            opacity: 0.90;
+            transform: translate(0, -6px);
+            box-shadow: 0 0 15px 0 #353535;
+           
+        }
+    }
+}

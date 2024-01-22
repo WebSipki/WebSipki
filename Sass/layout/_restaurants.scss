@@ -1,0 +1,78 @@
+/**RESTAURANT**/
+.restaurants {
+    background:$cd-bkg;
+    padding: 55px 5%;
+    font-family: "Roboto", sans-serif;
+    
+    .restaurants__title {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+       .restaurants__card {
+            @include rest-card;
+            transition-property: transform;
+            transition-duration:400ms;
+            &:hover{
+                transform: scale(1.15);
+            }
+                img {
+
+                    @include rest-image;
+
+                }
+                .new {
+
+                    @include rest-new
+
+                }
+      
+                .restaurants__card__description {
+                    padding: 20px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .cards__title {
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-decoration: none !important;
+                        color: $color-txt;
+                    }
+                    .cards__sub{
+                        margin-top: 5px;
+                        color: $color-txt;
+                        font-size: 17px;
+                        
+                    }
+
+
+                    i{
+                        position: absolute;
+                        font-size: 30px;
+                        color: $color-txt;
+                        align-self: flex-end;
+                       
+                    } 
+                    
+                    .icons-liked {
+                        
+                        opacity: 0; 
+                        transition-property: all; 
+                        transition-duration: 2s;   
+                       
+                       &:hover{
+                        opacity: 1; 
+                        color: transparent; 
+                        background-image: linear-gradient($cd-btn-Secondaire, $cd-btn-Primaire);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                       } 
+
+                    }
+                        
+                   
+                }    
+        
+        }           
+    
+}   
